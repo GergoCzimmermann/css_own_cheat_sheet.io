@@ -1,0 +1,137 @@
+<html>
+<head>
+        <link rel="stylesheet" href="./styles.css" type="text/css">
+        <style type="text/css"></style>
+</head>
+<body>
+    <header>
+        <h1>CSS Selectors</h1>
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <th>Selector</th>
+                <th>Example</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>.class </th>
+                <th>.intro</th>
+                <th>Selects all elements with class="intro"</th>
+            </tr>
+            <tr>
+                <th>.class1.class2 </th>
+                <th>.name1.name2</th>
+                <th>Selects all elements with both name1 and name2 set within its class attribute</th>
+            </tr>
+            <tr>
+                <th>.class1 .class2 </th>
+                <th>.name1 .name2</th>
+                <th>Selects all elements with name2 that is a descendant of an element with name1</th>
+            </tr>
+            <tr>
+                <th>#id</th>
+                <th>#firstname</th>
+                <th>Selects the element with id="firstname"</th>
+            </tr>
+            <tr>
+                <th>*</th>
+                <th>*</th>
+                <th>Selects all elements</th>
+            </tr>
+            <tr>
+                <th>element</th>
+                <th>p</th>
+                <th>Selects all &ltp&gt elements</th>
+            </tr>
+            <tr>
+                <th>element.class</th>
+                <th>p.intro</th>
+                <th>Selects all &ltp&gt elements with class="intro"</th>
+            </tr>
+            <tr>
+                <th>element,element</th>
+                <th>div, p</th>
+                <th>Selects all &ltdiv&gt elements and all &ltp&gt elements</th>
+            </tr>
+            <tr>
+                <th>element element </th>
+                <th>div p</th>
+                <th>Selects all &ltp&gt elements inside &ltdiv&gt elements</th>
+            </tr>
+            <tr>
+                <th>element>element</th>
+                <th>div > p</th>
+                <th>Selects all &ltp&gt elements where the parent is a &ltdiv&gt element</th>
+            </tr>
+            <tr>
+                <th>element+element</th>
+                <th>div + p</th>
+                <th>Selects the first &ltp&gt element that is placed immediately after &ltdiv&gt elements</th>
+            </tr>
+            <tr>
+                <th>element1~element2</th>
+                <th>p ~ ul</th>
+                <th>Selects every &ltul&gt element that is preceded by a &ltp&gt element</th>
+            </tr>
+            <tr>
+                <th>[attribute]</th>
+                <th>[target]</th>
+                <th>Selects all elements with a target attribute</th>
+            </tr>
+            <tr>
+                <th>[attribute=value]</th>
+                <th>[target=_blank]</th>
+                <th>Selects all elements with target="_blank"</th>
+            </tr>
+            <tr>
+                <th>[attribute~=value]</th>
+                <th>[title~=flower]</th>
+                <th>Selects all elements with a title attribute containing the word "flower"</th>
+            </tr>
+            <tr>
+                <th>[attribute|=value]</th>
+                <th>[lang|=en]</th>
+                <th>Selects all elements with a lang attribute value equal to "en" or starting with "en-"</th>
+            </tr>
+            <tr>
+                <th>[attribute^=value]</th>
+                <th>a[href^="https"]</th>
+                <th>Selects every &lta&gt element whose href attribute value begins with "https"</th>
+            </tr>
+            <tr>
+                <th>[attribute$=value]</th>
+                <th>a[href$=".pdf"]</th>
+                <th>Selects every &lta&gt element whose href attribute value ends with ".pdf"</th>
+            </tr>
+            <tr>
+                <th>[attribute*=value]</th>
+                <th>a[href*="w3schools"]</th>
+                <th>Selects every &lta&gt element whose href attribute value contains the substring "w3schools"</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,7 +1,9 @@
 <html>
 <head>
-        <link rel="stylesheet" href="./styles.css" type="text/css">
-        <style type="text/css"></style>
+    <title>CSS selectors list</title>
+    <meta name="viewport" content ="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <style type="text/css"></style>
 </head>
 <body>
     <header>
@@ -16,297 +18,297 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
+            <tr class="odd">
                 <th>.class </th>
                 <th>.intro</th>
                 <th>Selects all elements with class="intro"</th>
             </tr>
-            <tr>
+            <tr class="even">
                 <th>.class1.class2 </th>
                 <th>.name1.name2</th>
                 <th>Selects all elements with both name1 and name2 set within its class attribute</th>
             </tr>
-            <tr>
+            <tr class="odd">
                 <th>.class1 .class2 </th>
                 <th>.name1 .name2</th>
                 <th>Selects all elements with name2 that is a descendant of an element with name1</th>
             </tr>
-            <tr>
+            <tr class="even">
                 <th>#id</th>
                 <th>#firstname</th>
                 <th>Selects the element with id="firstname"</th>
             </tr>
-            <tr>
+            <tr class="odd">
                 <th>*</th>
                 <th>*</th>
                 <th>Selects all elements</th>
             </tr>
-            <tr>
+            <tr class="even">
                 <th>element</th>
                 <th>p</th>
                 <th>Selects all &ltp&gt elements</th>
             </tr>
-            <tr>
+            <tr class="odd">
                 <th>element.class</th>
                 <th>p.intro</th>
                 <th>Selects all &ltp&gt elements with class="intro"</th>
             </tr>
-            <tr>
+            <tr class="even">
                 <th>element,element</th>
                 <th>div, p</th>
                 <th>Selects all &ltdiv&gt elements and all &ltp&gt elements</th>
             </tr>
-            <tr>
+            <tr class="odd">
                 <th>element element </th>
                 <th>div p</th>
                 <th>Selects all &ltp&gt elements inside &ltdiv&gt elements</th>
             </tr>
-            <tr>
+            <tr class="even">
                 <th>element>element</th>
                 <th>div > p</th>
                 <th>Selects all &ltp&gt elements where the parent is a &ltdiv&gt element</th>
             </tr>
-            <tr>
+            <tr class="odd">
                 <th>element+element</th>
                 <th>div + p</th>
                 <th>Selects the first &ltp&gt element that is placed immediately after &ltdiv&gt elements</th>
             </tr>
-            <tr>
+            <tr class="even">
                 <th>element1~element2</th>
                 <th>p ~ ul</th>
                 <th>Selects every &ltul&gt element that is preceded by a &ltp&gt element</th>
             </tr>
-            <tr>
+            <tr class="odd">
                 <th>[attribute]</th>
                 <th>[target]</th>
                 <th>Selects all elements with a target attribute</th>
             </tr>
-            <tr>
+            <tr class="even">
                 <th>[attribute=value]</th>
                 <th>[target=_blank]</th>
                 <th>Selects all elements with target="_blank"</th>
             </tr>
-            <tr>
+            <tr class="odd">
                 <th>[attribute~=value]</th>
                 <th>[title~=flower]</th>
                 <th>Selects all elements with a title attribute containing the word "flower"</th>
             </tr>
-            <tr>
+            <tr class="even">
                 <th>[attribute|=value]</th>
                 <th>[lang|=en]</th>
                 <th>Selects all elements with a lang attribute value equal to "en" or starting with "en-"</th>
             </tr>
-            <tr>
+            <tr class="odd">
                 <th>[attribute^=value]</th>
                 <th>a[href^="https"]</th>
                 <th>Selects every &lta&gt element whose href attribute value begins with "https"</th>
             </tr>
-            <tr>
+            <tr class="even">
                 <th>[attribute$=value]</th>
                 <th>a[href$=".pdf"]</th>
                 <th>Selects every &lta&gt element whose href attribute value ends with ".pdf"</th>
             </tr>
-            <tr>
+            <tr class="odd">
                 <th>[attribute*=value]</th>
                 <th>a[href*="w3schools"]</th>
                 <th>Selects every &lta&gt element whose href attribute value contains the substring "w3schools"</th>
             </tr>
-            <tr>
+            <tr class="even">
                 <th>:active</th>
                 <th>a:active</th>
                 <th>Selects the active link</th>
             </tr>
-            <tr>
+            <tr class="odd">
                 <th>::after</th>
                 <th>p::after</th>
-                <th>Insert something after the content of each <p> element</th>
+                <th>Insert something after the content of each &ltp&gt element</th>
             </tr>
-            <tr>
+            <tr class="even">
                 <th>:checked</th>
                 <th>input:checked</th>
-                <th>Selects every checked <input> element</th>
+                <th>Selects every checked &ltinput&gt element</th>
             </tr>
-            <tr>
+            <tr class="odd">
                 <th>:default</th>
                 <th>input:default</th>
-                <th>Selects the default <input> element</th>
+                <th>Selects the default &ltinput&gt element</th>
             </tr>
-            <tr>
+            <tr class="even">
                 <th>:disabled</th>
                 <th>input:disabled</th>
-                <th>Selects every disabled <input> element</th>
+                <th>Selects every disabled &ltinput&gt element</th>
             </tr>
-            <tr>
+            <tr class="odd">
                 <th>:empty</th>
                 <th>p:empty</th>
-                <th>Selects every <p> element that has no children (including text nodes)</th>
+                <th>Selects every &ltp&gt element that has no children (including text nodes)</th>
             </tr>
-            <tr>
+            <tr class="even">
                 <th>:enabled</th>
                 <th>input:enabled</th>
-                <th>Selects every enabled <input> element</th>
+                <th>Selects every enabled &ltinput&gt element</th>
             </tr>
-            <tr>
+            <tr class="odd">
                 <th>:first-child</th>
                 <th>p:first-child</th>
-                <th>Selects every <p> element that is the first child of its parent</th>
+                <th>Selects every &ltp&gt element that is the first child of its parent</th>
             </tr>
-            <tr>
+            <tr class="even">
                 <th>::first-letter</th>
                 <th>p::first-letter</th>
-                <th>Selects the first letter of every <p> element</th>
+                <th>Selects the first letter of every &ltp&gt element</th>
             </tr>
-            <tr>
+            <tr class="odd">
                 <th>::first-line</th>
                 <th>p::first-line</th>
-                <th>Selects the first line of every <p> element</th>
+                <th>Selects the first line of every &ltp&gt element</th>
             </tr>
-            <tr>
+            <tr class="even">
                 <th>:first-of-type</th>
                 <th>p:first-of-type</th>
-                <th>Selects every <p> element that is the first <p> element of its parent</th>
+                <th>Selects every &ltp&gt element that is the first &ltp&gt element of its parent</th>
             </tr>
-            <tr>
+            <tr class="odd">
                 <th>:focus</th>
                 <th>input:focus</th>
                 <th>Selects the input element which has focus</th>
             </tr>
-            <tr>
+            <tr class="even">
                 <th>:fullscreen</th>
                 <th>:fullscreen</th>
                 <th>Selects the element that is in full-screen mode</th>
             </tr>
-            <tr>
+            <tr class="odd">
                 <th>:hover</th>
                 <th>a:hover</th>
                 <th>Selects links on mouse over</th>
             </tr>
-            <tr>
+            <tr class="even">
                 <th>:in-range</th>
                 <th>input:in-range</th>
                 <th>Selects input elements with a value within a specified range</th>
             </tr>
-            <tr>
+            <tr class="odd">
                 <th>:indeterminate</th>
                 <th>input:indeterminate</th>
                 <th>Selects input elements that are in an indeterminate state</th>
             </tr>
-            <tr>
+            <tr class="even">
                 <th>:invalid</th>
                 <th>input:invalid</th>
                 <th>Selects all input elements with an invalid value</th>
             </tr>
-            <tr>
+            <tr class="odd">
                 <th>:lang(language)</th>
                 <th>p:lang(it)</th>
-                <th>Selects every <p> element with a lang attribute equal to "it" (Italian)</th>
+                <th>Selects every &ltp&gt element with a lang attribute equal to "it" (Italian)</th>
             </tr>
-            <tr>
+            <tr class="even">
                 <th>:last-child</th>
                 <th>p:last-child</th>
-                <th>Selects every <p> element that is the last child of its parent</th>
+                <th>Selects every &ltp&gt element that is the last child of its parent</th>
             </tr>
-            <tr>
+            <tr class="odd">
                 <th>:last-of-type</th>
                 <th>p:last-of-type</th>
-                <th>Selects every <p> element that is the last <p> element of its parent</th>
+                <th>Selects every &ltp&gt element that is the last &ltp&gt element of its parent</th>
             </tr>
-            <tr>
+            <tr class="even">
                 <th>:link</th>
                 <th>a:link</th>
                 <th>Selects all unvisited links</th>
             </tr>
-            <tr>
+            <tr class="odd">
                 <th>::marker</th>
                 <th>::marker</th>
                 <th>Selects the markers of list items</th>
             </tr>
-            <tr>
+            <tr class="even">
                 <th>:not(selector)</th>
                 <th>:not(p)</th>
-                <th>Selects every element that is not a <p> element</th>
+                <th>Selects every element that is not a &ltp&gt element</th>
             </tr>
-            <tr>
+            <tr class="odd">
                 <th>:nth-child(n)</th>
                 <th>p:nth-child(2)</th>
-                <th>Selects every <p> element that is the second child of its parent</th>
+                <th>Selects every &ltp&gt element that is the second child of its parent</th>
             </tr>
-            <tr>
+            <tr class="even">
                 <th>:nth-last-child(n)</th>
                 <th>p:nth-last-child(2)</th>
-                <th>Selects every <p> element that is the second child of its parent, counting from the last child</th>
+                <th>Selects every &ltp&gt element that is the second child of its parent, counting from the last child</th>
             </tr>
-            <tr>
+            <tr class="odd">
                 <th>:nth-last-of-type(n)</th>
                 <th>p:nth-last-of-type(2)</th>
-                <th>Selects every <p> element that is the second <p> element of its parent, counting from the last child</th>
+                <th>Selects every &ltp&gt element that is the second &ltp&gt element of its parent, counting from the last child</th>
             </tr>
-            <tr>
+            <tr class="even">
                 <th>:nth-of-type(n)</th>
                 <th>p:nth-of-type(2)</th>
-                <th>Selects every <p> element that is the second <p> element of its parent</th>
+                <th>Selects every &ltp&gt element that is the second &ltp&gt element of its parent</th>
             </tr>
-            <tr>
+            <tr class="odd">
                 <th>:only-of-type</th>
                 <th>p:only-of-type</th>
-                <th>Selects every <p> element that is the only <p> element of its parent</th>
+                <th>Selects every &ltp&gt element that is the only &ltp&gt element of its parent</th>
             </tr>
-            <tr>
+            <tr class="even">
                 <th>:only-child</th>
                 <th>p:only-child</th>
-                <th>Selects every <p> element that is the only child of its parent</th>
+                <th>Selects every &ltp&gt element that is the only child of its parent</th>
             </tr>
-            <tr>
+            <tr class="odd">
                 <th>:optional</th>
                 <th>input:optional</th>
                 <th>Selects input elements with no "required" attribute</th>
             </tr>
-            <tr>
+            <tr class="even">
                 <th>:out-of-range</th>
                 <th>input:out-of-range</th>
                 <th>Selects input elements with a value outside a specified range</th>
             </tr>
-            <tr>
+            <tr class="odd">
                 <th>::placeholder</th>
                 <th>input::placeholder</th>
                 <th>Selects input elements with the "placeholder" attribute specified</th>
             </tr>
-            <tr>
+            <tr class="even">
                 <th>:read-only</th>
                 <th>input:read-only</th>
                 <th>Selects input elements with the "readonly" attribute specified</th>
             </tr>
-            <tr>
+            <tr class="odd">
                 <th>:read-write</th>
                 <th>input:read-write</th>
                 <th>Selects input elements with the "readonly" attribute NOT specified</th>
             </tr>
-            <tr>
+            <tr class="even">
                 <th>:required</th>
                 <th>input:required</th>
                 <th>Selects input elements with the "required" attribute specified</th>
             </tr>
-            <tr>
+            <tr class="odd">
                 <th>:root</th>
                 <th>:root</th>
                 <th>Selects the document's root element</th>
             </tr>
-            <tr>
+            <tr class="even">
                 <th>::selection</th>
                 <th>::selection</th>
                 <th>Selects the portion of an element that is selected by a user</th>
             </tr>
-            <tr>
+            <tr class="odd">
                 <th>:target</th>
                 <th>#news:target</th>
                 <th>Selects the current active #news element (clicked on a URL containing that anchor name)</th>
             </tr>
-            <tr>
+            <tr class="even">
                 <th>:valid</th>
                 <th>input:valid</th>
                 <th>Selects all input elements with a valid value</th>
             </tr>
-            <tr>
+            <tr class="odd">
                 <th>:visited</th>
                 <th>a:visited</th>
                 <th>Selects all visited links</th>

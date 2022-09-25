@@ -1,3 +1,47 @@
-* {
+body{
     background-color: bisque;
+    font-family:'Times New Roman', Times, serif;
+}
+
+table{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+}
+
+h1{
+    font-size: 50px;
+    color: brown;
+    text-align: center;
+}
+
+thead{
+    font-size: 25px;
+    background-color: goldenrod;
+}
+
+tr.odd{
+    background-color: darksalmon;
+}
+
+tr.even{
+    background-color: burlywood;
+}
+
+tr:hover {
+    background-color: cornsilk;
+    font-weight: bold;
+}
+
+@media (max-width: 1020px){
+    table{
+        width: 40em;
+    }
+}
+
+@media (max-width: 660px){
+    table{
+        width: 20em;
+    }
 }
